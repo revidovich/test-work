@@ -7,14 +7,14 @@ export default function Search() {
   const handleSubmit = () => {
     fetchData
       // .search(searchQuery)
-      .then((data) => {
-        console.log(data);
-        setSearchQuery('');
-      })
-      .catch((err) => console.log("Ошибка поискового запроса"));
+      // .then((data: any) => {
+      //   console.log(data);
+      //   setSearchQuery('');
+      // })
+      // .catch((err: any) => console.log("Ошибка поискового запроса"));
   }
 
-  function handleFormSubmit (event) {
+  function handleFormSubmit (event: { preventDefault: () => void; }) {
     event.preventDefault();
     if (searchQuery.trim() === '') {
       setSearchQuery('');

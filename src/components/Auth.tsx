@@ -8,19 +8,19 @@ import { usersSelector } from "../store/models/UserSelectors";
 
 export default function Auth() {
   const dispatch = useDispatch();
-  const currentUser = useSelector((state) => state.currentUser);
   const users = useSelector((state) => usersSelector(state));
+  const currentUser = useSelector((state: any) => state.currentUser);
   const [nameValue, setNameValue] = useState<string>('');
   const [isStartScreen, setIsStartScreen] = useState<boolean>(true);
 
-  const handleChange = useCallback(e => {
+  const handleChange = useCallback((e: { target: { value: React.SetStateAction<string>; }; }) => {
     setNameValue(e.target.value);
   }, []);
   
-  const onSubmitHandler = (e) => {
+  const onSubmitHandler = (e: { preventDefault: () => void; }) => {
     e.preventDefault();
     if (nameValue === '') { // это для выхода в будущем
-      dispatch(clearCurrentUser());
+      dispatch(clearCurrentUser(null));
     } else {
       dispatch(setCurrentUser(nameValue));
       setIsStartScreen(false);

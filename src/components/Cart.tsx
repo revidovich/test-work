@@ -1,10 +1,14 @@
 import React from "react";
 
-export default function Cart({ itemIDs }) {
+interface CartPropsInterface {
+  itemIDs: number[];
+}
+
+export default function Cart({ itemIDs }: CartPropsInterface) {
   return (
     <div style={{ width: "50px", margin: "10px" }}>
-      {itemIDs.map((id) => (
-        <div key={id} id={id} />
+      {itemIDs.map((id: number) => (
+        <div key={id} />
       ))}
     </div>
   );

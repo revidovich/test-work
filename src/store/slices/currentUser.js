@@ -12,4 +12,3 @@ export const currentUserSlice = createSlice({
 export const setCurrentUser = currentUserSlice.actions.set;
 export const clearCurrentUser = currentUserSlice.actions.clear;
 export const currentUserReducer = currentUserSlice.reducer;
-export default currentUserSlice;

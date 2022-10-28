@@ -8,11 +8,12 @@
     "type": "git",
     "url": "git+https://github.com/revidovich/test-work.git"
   },
-  "homepage": "https://revidovich.github.io/test-work/",
+  "homepage": ".",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
