@@ -1,14 +1,14 @@
 {
-  "name": "test-sionic",
+  "name": "test-work",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "author": "revidovich",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/revidovich/test-sionic.git"
+    "url": "git+https://github.com/revidovich/test-work.git"
   },
-  "homepage": "https://revidovich.github.io/test-sionic/",
+  "homepage": "https://revidovich.github.io/test-work/",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

@@ -1,6 +1,6 @@
-# test-sionic
+# test-work
 
-Open [https://revidovich.github.io/test-sionic/](https://revidovich.github.io/test-sionic/) to view it in the browser.  
+Open [https://revidovich.github.io/test-work/](https://revidovich.github.io/test-work/) to view it in the browser.  
 Локально [http://127.0.0.1:5173/](http://127.0.0.1:5173/).
 
 `npm run dev`  
